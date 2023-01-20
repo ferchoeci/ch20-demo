@@ -39,13 +39,13 @@
 							<provider>MC</provider>
 							<muleVersion>4.4.0</muleVersion>
 							<server>cloudhub-deploy</server>							<!-- reads credentials from settings.xml -->
-							<applicationName>${project.name}</applicationName>
+							<applicationName>${environment}-${project.name}</applicationName>
 							<replicas>1</replicas>
 							<vCores>0.1</vCores>
 							<deploymentTimeout>240000</deploymentTimeout>
-							<properties>
+							<secureProperties>
 								<cicd.welcome.message>${cicd.welcome.message}</cicd.welcome.message>
-							</properties>
+							</secureProperties>
 							<deploymentSettings>
 								<http>
 									<inbound>
