@@ -33,7 +33,7 @@
 						<cloudhub2Deployment>
 							<uri>https://anypoint.mulesoft.com</uri>
 							<businessGroupId>2c1616ed-7641-4ac1-92e2-79f89fa72552</businessGroupId>
-							<environment>DEV</environment>
+							<environment>${environment}</environment>
 							<target>Cloudhub-EU-West-2</target>
 							<provider>MC</provider>
 							<muleVersion>4.4.0</muleVersion>
